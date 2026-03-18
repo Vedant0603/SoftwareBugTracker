@@ -1,0 +1,28 @@
+{
+  "name": "software-bug-tracker",
+  "displayName": "Bug Tracker",
+  "description": "VS Code Bug Tracker Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bugtracker.openPanel",
+        "title": "Open Bug Tracker"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/vscode": "^1.85.0"
+  }
+}
